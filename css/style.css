@@ -15,6 +15,7 @@
   width: 100%;
   text-align: center;
   margin-top: 50px;
+  padding: 20px;
   top: 0;
   left: 0;
   color: white;
@@ -23,14 +24,22 @@
   text-shadow: 0px 0px 20px white;
 }
 
+html, body {
+    overflow-x: hidden; /* Mencegah geser ke kiri/kanan */
+    width: 100%;
+    position: relative;
+}
+
 body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   min-height: 100vh;
   background-color: var(--dark-color);
-  overflow: hidden;
   perspective: 1000px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .night {
@@ -1212,5 +1221,80 @@ body {
 .not-loaded * {
   animation-play-state: paused !important;
 }
+/* --- PENGATURAN UNTUK LAPTOP / DESKTOP --- */
+/* Untuk Laptop: Mengecilkan */
+@media screen and (min-width: 1024px) {
+  .flowers {
+    zoom: 0.8; /* Mengecilkan ke 70% */
+  }
+}
 
+/* Untuk Handphone: Memperbesar */
+@media screen and (max-width: 768px) {
+  .flowers {
+    zoom: 1.4; /* Memperbesar ke 140% */
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+/* Gaya Dasar Tombol Samping */
+.btn-side {
+    position: fixed;
+    bottom: 10%; /* Posisi dari bawah layar */
+    padding: 12px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 14px;
+    backdrop-filter: blur(5px);
+    z-index: 1000;
+    
+    /* Animasi Awal (Tersembunyi) */
+    opacity: 0;
+    transition: all 1s ease; /* Durasi animasi muncul 1 detik */
+}
+
+/* Posisi Kiri */
+#btn-left {
+    left: -100px; /* Mulai dari luar layar kiri */
+}
+
+/* Posisi Kanan */
+#btn-right {
+    right: -100px; /* Mulai dari luar layar kanan */
+}
+
+/* Saat Animasi Aktif (Muncul) */
+.btn-side.show {
+    opacity: 1;
+}
+
+#btn-left.show {
+    left: 20px; /* Berhenti 20px dari kiri */
+}
+
+#btn-right.show {
+    right: 20px; /* Berhenti 20px dari kanan */
+}
+
+/* Efek Hover */
+.btn-side:hover {
+    background: white;
+    color: black;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Penyesuaian untuk HP */
+@media screen and (max-width: 768px) {
+    .btn-side {
+        bottom: 5%; /* Lebih rendah di HP */
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}
 /*# sourceMappingURL=style.css.map */
