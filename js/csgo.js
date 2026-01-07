@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
         icon: 'success', // Icon diganti jadi sukses/centang agar lebih ceria
         showCancelButton: false, // Menghilangkan tombol "No"
         confirmButtonColor: '#3085d6',
-        confirmButtonText: 'Next', // Teks tombol diganti jadi "Next"
+        confirmButtonText: 'Thank U', // Teks tombol diganti jadi "Next"
     }).then((result) => {
         if (result.isConfirmed) {
             // Musik dihapus, langsung jalankan animasi

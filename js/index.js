@@ -5,7 +5,7 @@ const text = `I Have Something For U`.split('')
 title.style.display = 'flex'
 title.style.flexWrap = 'wrap'
 title.style.justifyContent = 'center'
-title.style.gap = '0.5rem'
+title.style.gap = '0.3rem'
 
 for (let index = 0; index < text.length; index++) {
   if (text[index] !== ' ') {

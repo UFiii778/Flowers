@@ -18,31 +18,50 @@
   width: 100%;
   height: 100%;
   filter: blur(0.1vmin);
-  background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)), repeating-linear-gradient(220deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), linear-gradient(90deg, rgb(255, 255, 250), rgb(240, 240, 240));
+  background-image: 
+   radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), 
+   radial-gradient(ellipse at bottom, var(--dark-color), rgba(30, 112, 255, 0.2)), 
+   repeating-linear-gradient(220deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), 
+   repeating-linear-gradient(189deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), 
+   repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), 
+   linear-gradient(90deg, rgb(255, 255, 250), rgb(240, 240, 240));
 }
 
+/* Tampilan Default (Mobile First - untuk HP) */
 .title {
   position: absolute;
   top: 0;
   left: 0;
   color: white;
   font-family: 'Courier New', Courier, monospace;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   align-items: center;
-
   width: 100%;
   height: 100vh;
   text-shadow: 0 0 20px white;
-  letter-spacing: 0px;
+  
+  font-size: 1.5rem;    
+  padding: 0 20px;      
+  letter-spacing: 2px;
+  line-height: 1.6;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
   .title {
-    letter-spacing: 20px;
+    font-size: 2.5rem;   
+    padding: 0 50px;
+    letter-spacing: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 2.5rem;     
+    padding: 0 100px;
+    letter-spacing: 15px;
   }
 }
 

@@ -28,15 +28,12 @@ body {
   filter: blur(0.1vmin);
   background-image: 
     radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), 
-    radial-gradient(ellipse at bottom, var(--dark-color), rgba(255, 145, 145, 0.1)), 
+    radial-gradient(ellipse at bottom, var(--dark-color), rgba(30, 112, 255, 0.2)), 
     repeating-linear-gradient(220deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), 
     repeating-linear-gradient(189deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), 
-    repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px);
+    repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px),
+    linear-gradient(90deg, rgb(255, 255, 250), rgb(240, 240, 240));
   z-index: -1;
-}
-
-.song {
-  visibility: hidden;
 }
 
 .container {
@@ -106,19 +103,11 @@ body {
 }
 .six img.profile-picture {
   display: inline-block;
-  height: 350px;
+  height: 250px;
   max-width: 100%;
-  border-radius: 50%; /* Opsional: membuat foto bulat */
+  border-radius: 50%; 
   border: 3px solid var(--text-light);
-}
-.six .hat {
-  position: absolute;
-  width: 80px;
-  top: -35px;
-  left: 50%;
-  transform: translateX(-50%) rotate(-20deg); /* Penyesuaian posisi topi */
-  z-index: 2;
-  opacity: 0;
+  object-fit: cover;
 }
 
 .wish-hbd { font-size: 3em; margin: 0; text-transform: uppercase; }
@@ -131,7 +120,7 @@ body {
   width: 100vw;
   position: fixed;
   top: 0;
-  pointer-events: none; /* Agar klik tembus ke bawah */
+  pointer-events: none; 
 }
 
 .baloons img { display: inline-block; position: absolute; }
@@ -148,19 +137,17 @@ body {
   z-index: -1;
 }
 
-/* Mengatur posisi SVG confetti (disingkat, tetap gunakan posisi asli) */
-.eight svg:nth-child(1) { fill: #bd6ecf; left: 5vw; top: 7vh; }
-.eight svg:nth-child(2) { fill: #7dd175; left: 35vw; top: 23vh; }
-.eight svg:nth-child(3) { fill: #349d8b; left: 23vw; top: 33vh; }
-.eight svg:nth-child(4) { fill: #347a9d; left: 57vw; top: 43vh; }
+.eight svg:nth-child(1) { fill: #a31cc1a2; left: 5vw; top: 7vh; }
+.eight svg:nth-child(2) { fill: #f1ee3085; left: 35vw; top: 23vh; }
+.eight svg:nth-child(3) { fill: #cb141aa6; left: 23vw; top: 33vh; }
+.eight svg:nth-child(4) { fill: #347a9dcb; left: 57vw; top: 43vh; }
 .eight svg:nth-child(5) { fill: #c66053; left: 7vw; top: 68vh; }
 .eight svg:nth-child(6) { fill: #bfaa40; left: 77vw; top: 42vh; }
 .eight svg:nth-child(7) { fill: #e3bae8; left: 83vw; top: 68vh; }
 .eight svg:nth-child(8) { fill: #8762cb; left: 37vw; top: 86vh; }
 .eight svg:nth-child(9) { fill: #9a90da; left: 87vw; top: 94vh; }
 
-/* Button Styles */
-/* Cari bagian ini di csa.css dan update */
+
 .nine .button-wrapper {
     display: flex;
     justify-content: center;
@@ -168,8 +155,6 @@ body {
     margin-top: 30px;
     position: relative;
     z-index: 10;
-    
-    /* TAMBAHAN PENTING: Sembunyikan tombol di awal */
     opacity: 0;
     visibility: hidden; 
 }
@@ -207,3 +192,11 @@ body {
   .nine p { font-size: 1.5rem; }
   .btn-glow { width: 80%; text-align: center; }
 }
+
+@media screen and (max-width: 768px) {
+    .profile-img {
+        width: 80px;  /* Ukuran lebih kecil untuk HP */
+        height: 80px;
+    }
+}
+
