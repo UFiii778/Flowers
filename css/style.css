@@ -182,7 +182,7 @@ body {
   transform: translate(-50%, -100%);
   width: 8vmin;
   height: 8vmin;
-  background-color: #fff;
+  background-color: #ffffff;
   filter: blur(10vmin);
 }
 
@@ -193,11 +193,11 @@ body {
   width: 8vmin;
   height: 11vmin;
   border-radius: 51% 49% 47% 53%/44% 45% 55% 69%;
-  background-color: #a7ffee;
-  background-image: linear-gradient(to top, #fff, #fff);
+  background-color: #eeff00;
+  background-image: linear-gradient(to top, #00d5ff, #fdb9ff);
   transform-origin: bottom center;
   opacity: 0.9;
-  box-shadow: inset 0 0 2vmin rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 0 2vmin rgba(220, 23, 255, 0.4);
 }
 
 .flower__leaf--1 {
@@ -218,7 +218,7 @@ body {
   transform-origin: bottom left;
   border-radius: 4vmin 10vmin 4vmin 4vmin;
   transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
-  background-image: linear-gradient(to top, rgba(255, 2555, 255, 0.4), #fff);
+  background-image: linear-gradient(to top, rgba(255, 2555, 255, 0.4), #00bfff);
   z-index: 1;
   opacity: 0.8;
   -webkit-transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
@@ -234,7 +234,7 @@ body {
   width: 9vmin;
   height: 4vmin;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .flower__white-circle::after {
@@ -252,7 +252,7 @@ body {
 .flower__line {
   height: 55vmin;
   width: 1.5vmin;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent, rgba(255, 255, 255, 0.2)), linear-gradient(to top, transparent 10%, #fff, #fff);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent, rgba(255, 255, 255, 0.2)), linear-gradient(to top, transparent 10%, #00d5ff, #cc02ff);
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
   animation: grow-flower-tree 4s backwards;
 }
@@ -267,7 +267,7 @@ body {
   height: var(--h);
   border-top-right-radius: var(--h);
   border-bottom-left-radius: var(--h);
-  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.4), #fff);
+  background-image: linear-gradient(to top, rgba(220, 23, 255, 0.4), #00d5ff);
 }
 
 .flower__line__leaf--1 {
@@ -313,14 +313,14 @@ body {
   bottom: 0vmin;
   width: 1vmin;
   height: 1vmin;
-  background-color: rgb(255, 251, 0);
+  background-color: rgb(0, 234, 255);
   border-radius: 50%;
   filter: blur(0.2vmin);
   animation: light-ans 4s linear infinite backwards;
 }
 
 .flower__light:nth-child(odd) {
-  background-color: #fff;
+  background-color: #f700ff;
 }
 
 .flower__light--1 {
@@ -364,7 +364,7 @@ body {
 }
 
 .flower__grass {
-  --c: #fff;
+  --c: #00b3ff;
   --line-w: 1.5vmin;
   position: absolute;
   bottom: 12vmin;
@@ -551,7 +551,7 @@ body {
 .flower__g-long {
   --w: 2vmin;
   --h: 6vmin;
-  --c: #fff;
+  --c: #a600ff;
   position: absolute;
   bottom: 10vmin;
   left: -3vmin;
@@ -606,7 +606,7 @@ body {
   width: 30vmin;
   height: 50vmin;
   border-top-left-radius: 100%;
-  border-left: 2vmin solid #fff;
+  border-left: 2vmin solid #00b7ff;
   background-image: linear-gradient(to bottom, transparent, var(--dark-color) 60%);
   -webkit-mask-image: linear-gradient(to top, transparent 30%, #fff 60%);
 }
@@ -676,7 +676,7 @@ body {
 .flower__g-front__line {
   width: 0.3vmin;
   height: 20vmin;
-  background-image: linear-gradient(to top, transparent, #fff, transparent 100%);
+  background-image: linear-gradient(to top, transparent, #00d5ff, transparent 100%);
   position: relative;
 }
 
@@ -778,7 +778,7 @@ body {
   height: 10vmin;
   border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
   box-shadow: inset 0 2px 1vmin hsla(0, 0%, 100%, 0.2);
-  background-image: linear-gradient(to bottom left, transparent, var(--dark-color)), linear-gradient(to bottom right, #fff 50%, transparent 50%, transparent);
+  background-image: linear-gradient(to bottom left, transparent, #c300ff), linear-gradient(to bottom right, #00d5ff 50%, transparent 50%, transparent);
   -webkit-mask-image: linear-gradient(to bottom right, #fff 50%, transparent 50%, transparent);
   mask-image: linear-gradient(to bottom right, #fff 50%, transparent 50%, transparent);
 }
@@ -812,8 +812,7 @@ body {
   width: 30vmin;
   height: 50vmin;
   border-top-left-radius: 100%;
-  border-left: 2vmin solid #fff;
-  -webkit-mask-image: linear-gradient(to top, transparent 25%, #fff 50%);
+  border-left: 2vmin solid #d900ff;
   position: relative;
   z-index: 1;
 }
@@ -826,7 +825,7 @@ body {
   height: 10vmin;
   border-radius: 100% 0% 0% 100%/100% 100% 0% 0%;
   box-shadow: inset 0 2px 1vmin hsla(0, 0%, 100%, 0.2);
-  background-image: linear-gradient(to bottom left, transparent, var(--dark-color) 98%), linear-gradient(to bottom right, #fff 45%, transparent 50%, transparent);
+  background-image: linear-gradient(to bottom left, transparent, #d900ff 98%), linear-gradient(to bottom right, #00d5ff 45%, transparent 50%, transparent);
   -webkit-mask-image: linear-gradient(135deg, #fff 40%, transparent 50%, transparent);
 }
 
@@ -1008,7 +1007,7 @@ body {
 .long-g .leaf {
   --w: 15vmin;
   --h: 40vmin;
-  --c: #1aaa15;
+  --c: #155daa;
   position: absolute;
   bottom: 0;
   width: var(--w);
@@ -1226,28 +1225,25 @@ body {
 .not-loaded * {
   animation-play-state: paused !important;
 }
-/* --- PENGATURAN UNTUK LAPTOP / DESKTOP --- */
-/* Untuk Laptop: Mengecilkan */
+
 @media screen and (min-width: 1024px) {
   .flowers {
-    zoom: 0.8; /* Mengecilkan ke 70% */
+    zoom: 0.8; 
   }
 }
 
-/* Untuk Handphone: Memperbesar */
 @media screen and (max-width: 768px) {
   .flowers {
-    zoom: 1.4; /* Memperbesar ke 140% */
+    zoom: 1.4; 
     display: flex;
     justify-content: center;
   }
 }
 
 
-/* Gaya Dasar Tombol Samping */
 .btn-side {
     position: fixed;
-    bottom: 10%; /* Posisi dari bawah layar */
+    bottom: 10%; 
     padding: 12px 20px;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.4);
@@ -1257,36 +1253,30 @@ body {
     font-size: 14px;
     backdrop-filter: blur(5px);
     z-index: 1000;
-    
-    /* Animasi Awal (Tersembunyi) */
     opacity: 0;
-    transition: all 1s ease; /* Durasi animasi muncul 1 detik */
+    transition: all 1s ease; 
 }
 
-/* Posisi Kiri */
 #btn-left {
-    left: -100px; /* Mulai dari luar layar kiri */
+    left: -100px; 
 }
 
-/* Posisi Kanan */
 #btn-right {
-    right: -100px; /* Mulai dari luar layar kanan */
+    right: -100px; 
 }
 
-/* Saat Animasi Aktif (Muncul) */
 .btn-side.show {
     opacity: 1;
 }
 
 #btn-left.show {
-    left: 20px; /* Berhenti 20px dari kiri */
+    left: 20px; 
 }
 
 #btn-right.show {
-    right: 20px; /* Berhenti 20px dari kanan */
+    right: 20px; 
 }
 
-/* Efek Hover */
 .btn-side:hover {
     background: white;
     color: black;
@@ -1294,10 +1284,9 @@ body {
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
 }
 
-/* Penyesuaian untuk HP */
 @media screen and (max-width: 768px) {
     .btn-side {
-        bottom: 5%; /* Lebih rendah di HP */
+        bottom: 5%; 
         padding: 10px 15px;
         font-size: 12px;
     }
